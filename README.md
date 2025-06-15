@@ -10,7 +10,20 @@
 - Incluir dados **não tratados** dentro da pasta `raw`.
 
 ---
+## 📂 Estrutura de Pastas
 
+```text
+projeto_mineracao/
+├── data/
+│   ├── raw/          # Dados originais (brutos), sem alteração
+│   ├── processed/    # Dados tratados, limpos ou transformados
+│   └── external/     # Dados externos ou complementares
+├── notebooks/        # Notebooks Jupyter para exploração e análises
+├── src/              # Scripts Python (ex: limpeza, visualização, modelagem)
+├── outputs/          # Gráficos, relatórios e arquivos gerados
+└── README.md         # Explicação geral do projeto
+
+--
 ## Como Criar Ambiente Virtual Python
 
 1. Criar o ambiente virtual:
