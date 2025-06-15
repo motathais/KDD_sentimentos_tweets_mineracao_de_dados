@@ -22,8 +22,8 @@ projeto_mineracao/
 ├── src/              # Scripts Python (ex: limpeza, visualização, modelagem)
 ├── outputs/          # Gráficos, relatórios e arquivos gerados
 └── README.md         # Explicação geral do projeto
-
---
+```
+---
 ## Como Criar Ambiente Virtual Python
 
 1. Criar o ambiente virtual:
