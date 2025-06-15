@@ -33,4 +33,12 @@ projeto_mineracao/
 2. Ativar ambiente virtual: .\venv\Scripts\activate
 
 
+---
+## Bibliotecas instaladas
+
+pip install pandas matplotlib seaborn jupyter
+
+
+
+
 
