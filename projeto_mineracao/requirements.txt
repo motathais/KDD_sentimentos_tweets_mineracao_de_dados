@@ -1,0 +1,11 @@
+mineracao_trabalho/
+├── data/
+│   ├── raw/          # Dados originais (brutos) que você baixou, SEM ALTERAÇÃO
+│   ├── processed/    # Dados tratados, limpos ou transformados
+│   └── external/     # Caso use bases externas ou complementares no futuro
+├── notebooks/        # Notebooks Jupyter para exploração e análises
+├── src/              # Scripts Python (ex: limpeza, visualização, modelagem)
+├── outputs/          # Gráficos, relatórios e arquivos gerados
+├── requirements.txt  # Lista de bibliotecas usadas
+└── README.md         # Explicação geral do projeto
+
