@@ -85,15 +85,13 @@ Valida com k-fold
 
 Salva o modelo Logistic como .joblib
 
-```bash
 python src/comparar_modelos.py
 
 
 2️⃣ Testar Novas Frases
 
-```bash
 python src/teste_frase.py
-
+´´´
 ---
 📊 Resultados
 Cross-validation
