@@ -66,13 +66,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ---
-📥 Dataset
+## 📥 Dataset
 O dataset Sentiment140 está salvo em data/raw/sentiment_tweets.csv.
 
 Após limpeza, o arquivo limpo é salvo em data/processed/sentiment_tweets_clean.csv.
 
 ---
-🚀 Como Rodar
+## 🚀 Como Rodar
 
 1️⃣ Comparar Modelos
 
@@ -90,7 +90,7 @@ python src/comparar_modelos.py
 2️⃣ Testar Novas Frases
 
 python src/teste_frase.py
-´´´
+
 ---
 📊 Resultados
 Cross-validation
