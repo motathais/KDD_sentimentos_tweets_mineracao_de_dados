@@ -53,7 +53,7 @@ sns.boxplot(x='target', y='text_length', data=df)
 plt.title('Distribuição do Tamanho dos Tweets por Classe')
 plt.xlabel('Sentimento (0 = Negativo, 4 = Positivo)')
 plt.ylabel('Tamanho do Tweet')
-plt.xticks([0, 1], ['Negativo', 'Positivo'])  # Ajuste se necessário
+plt.xticks([0, 1], ['Negativo', 'Positivo'])  
 plt.show()
 
 # ========================
