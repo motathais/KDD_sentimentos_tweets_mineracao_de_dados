@@ -1,44 +1,126 @@
-# Projeto de Mineração de Dados
+# 📊 Análise de Sentimentos com Mineração de Dados
 
-## Orientações Gerais
-
-- Incluir a pasta `data` dentro de `projeto_mineracao`.
-- Subpastas de `data`:
-  - `external`: Dados externos ou complementares.
-  - `processed`: Dados tratados ou transformados.
-  - `raw`: Dados originais, **não tratados**.
-- Incluir dados **não tratados** dentro da pasta `raw`.
+Este projeto realiza uma **análise de sentimentos** em tweets usando o dataset **Sentiment140**, aplicando técnicas de **limpeza de dados**, **vetorização TF-IDF** e **classificação supervisionada**.
 
 ---
-## 📂 Estrutura de Pastas
 
-```text
+## 📁 Estrutura do Projeto
+
 projeto_mineracao/
 ├── data/
-│   ├── raw/          # Dados originais (brutos), sem alteração
-│   ├── processed/    # Dados tratados, limpos ou transformados
-│   └── external/     # Dados externos ou complementares
-├── notebooks/        # Notebooks Jupyter para exploração e análises
-├── src/              # Scripts Python (ex: limpeza, visualização, modelagem)
-├── outputs/          # Gráficos, relatórios e arquivos gerados
-└── README.md         # Explicação geral do projeto
-```
----
-## Como Criar Ambiente Virtual Python
-
-1. Criar o ambiente virtual:
-   ```bash
-   python -m venv venv
-
-2. Ativar ambiente virtual: .\venv\Scripts\activate
+│ ├── raw/ # Dataset original (.csv)
+│ ├── processed/ # Dataset limpo
+├── modelos/ # Modelos treinados salvos (.joblib)
+├── notebooks/ # Análises exploratórias (opcional)
+├── src/ # Scripts Python
+│ ├── comparar_modelos.py # Treino e comparação de modelos
+│ ├── teste_frase.py # Teste de novas frases
+├── README.md
+├── requirements.txt
 
 
 ---
-## Bibliotecas instaladas
 
-pip install pandas matplotlib seaborn jupyter
+## 📌 Objetivo
+
+- Explorar, limpar e preparar o dataset de tweets.
+- Comparar algoritmos de classificação de sentimentos (**Naive Bayes** e **Regressão Logística**).
+- Validar os modelos com **k-fold cross-validation**.
+- Salvar o melhor modelo treinado.
+- Fazer testes em **novas frases**.
+
+---
+
+## 📦 Pré-requisitos
+
+- Python 3.9+  
+- Virtualenv (opcional, mas recomendado)
+
+---
+
+## ⚙️ Configuração do Ambiente
+
+1️⃣ Clone o repositório ou copie os arquivos:
+
+```bash
+git clone <URL_DO_SEU_REPOSITORIO>
+cd projeto_mineracao
+
+2️⃣ Crie um ambiente virtual:
+
+```bash
+python -m venv venv
+
+3️⃣ Ative o ambiente virtual:
+
+- Windows:
+```bash
+venv\Scripts\activate
+
+- Mac/Linux:
+```bash
+source venv/bin/activate
+
+4️⃣ Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+
+---
+📥 Dataset
+O dataset Sentiment140 está salvo em data/raw/sentiment_tweets.csv.
+
+Após limpeza, o arquivo limpo é salvo em data/processed/sentiment_tweets_clean.csv.
+
+---
+🚀 Como Rodar
+
+1️⃣ Comparar Modelos
+
+Execute o script que:
+
+Treina Naive Bayes e Logistic Regression
+
+Valida com k-fold
+
+Salva o modelo Logistic como .joblib
+
+```bash
+python src/comparar_modelos.py
+
+
+2️⃣ Testar Novas Frases
+
+```bash
+python src/teste_frase.py
+
+---
+📊 Resultados
+Cross-validation
+
+Acurácia
+
+Matriz de confusão
+
+Relatório de classificação
+
+---
+✅ Tecnologias Usadas
+Python
+
+Pandas
+
+Scikit-learn
+
+NLTK
+
+Joblib
+
+Seaborn / Matplotlib
 
 
 
-
+✨ Autor
+Thais Marques Mota
+Emerson Rodrigo Lopes
 
