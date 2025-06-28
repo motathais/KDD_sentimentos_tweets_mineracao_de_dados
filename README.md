@@ -47,7 +47,7 @@ cd projeto_mineracao
 
 2️⃣ Crie um ambiente virtual:
 
-```bash
+
 python -m venv venv
 
 3️⃣ Ative o ambiente virtual:
