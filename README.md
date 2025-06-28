@@ -54,16 +54,16 @@ python -m venv venv
 3️⃣ Ative o ambiente virtual:
 
 - Windows:
-```bash
+
 venv\Scripts\activate
 
 - Mac/Linux:
-```bash
+
 source venv/bin/activate
 
 4️⃣ Instale as dependências:
 
-```bash
+
 pip install -r requirements.txt
 
 ---
