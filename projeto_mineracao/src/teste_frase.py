@@ -12,7 +12,7 @@ def testar_frase(frase):
     pred = model.predict([frase])[0]
     prob = model.predict_proba([frase])[0]
     sentimento = 'Positivo' if pred == 1 else 'Negativo'
-    print(f"🔹 Frase: {frase}")edg
+    print(f"🔹 Frase: {frase}")
     print(f"➡️ Previsão: {sentimento} ({prob[pred]*100:.2f}% de confiança)")
 
 # ========================
