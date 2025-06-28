@@ -19,7 +19,7 @@ projeto_mineracao/
  │   ├── teste_frase.py        # Teste de novas frases
  ├── README.md
  ├── requirements.txt
-
+```
 
 ---
 
@@ -44,8 +44,10 @@ projeto_mineracao/
 
 1️⃣ Clone o repositório ou copie os arquivos:
 
+```bash
 git clone <URL_DO_SEU_REPOSITORIO>
 cd projeto_mineracao
+```
 
 2️⃣ Crie um ambiente virtual:
 
