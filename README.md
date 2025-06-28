@@ -51,25 +51,31 @@ cd projeto_mineracao
 
 2️⃣ Crie um ambiente virtual:
 
-
+```bash
 python -m venv venv
+```
 
 3️⃣ Ative o ambiente virtual:
 
 - Windows:
-
+  
+```bash
 venv\Scripts\activate
+```
 
 - Mac/Linux:
 
+```
 source venv/bin/activate
+```
 
 4️⃣ Instale as dependências:
 
-
+```bash
 pip install -r requirements.txt
-
+```
 ---
+
 ## 📥 Dataset
 O dataset Sentiment140 está salvo em data/raw/sentiment_tweets.csv.
 
@@ -88,13 +94,15 @@ Valida com k-fold
 
 Salva o modelo Logistic como .joblib
 
+```bash
 python src/comparar_modelos.py
-
+```
 
 2️⃣ Testar Novas Frases
 
+```bash
 python src/teste_frase.py
-
+```
 ---
 ## 📊 Resultados
 Cross-validation
