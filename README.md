@@ -4,19 +4,21 @@ Este projeto realiza uma **análise de sentimentos** em tweets usando o dataset 
 
 ---
 
+
 ## 📁 Estrutura do Projeto
 
+```plaintext
 projeto_mineracao/
-├── data/
-│ ├── raw/ # Dataset original (.csv)
-│ ├── processed/ # Dataset limpo
-├── modelos/ # Modelos treinados salvos (.joblib)
-├── notebooks/ # Análises exploratórias (opcional)
-├── src/ # Scripts Python
-│ ├── comparar_modelos.py # Treino e comparação de modelos
-│ ├── teste_frase.py # Teste de novas frases
-├── README.md
-├── requirements.txt
+ ├── data/
+ │   ├── raw/                  # Dataset original (.csv)
+ │   ├── processed/            # Dataset limpo
+ ├── modelos/                  # Modelos treinados salvos (.joblib)
+ ├── notebooks/                # Análises exploratórias (opcional)
+ ├── src/                      # Scripts Python
+ │   ├── comparar_modelos.py   # Treino e comparação de modelos
+ │   ├── teste_frase.py        # Teste de novas frases
+ ├── README.md
+ ├── requirements.txt
 
 
 ---
