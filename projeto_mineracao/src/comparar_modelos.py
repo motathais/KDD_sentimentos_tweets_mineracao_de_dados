@@ -1,13 +1,19 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import classification_report, accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.pipeline import Pipeline
 import joblib
 import nltk
 from nltk.corpus import stopwords
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+nltk.download('stopwords')
+stop_words = stopwords.words('english')
+
 
 nltk.download('stopwords')
 stop_words = stopwords.words('english')
@@ -57,10 +63,21 @@ for name, pipe in [('Logistic Regression', pipe_logreg), ('Naive Bayes', pipe_nb
     y_pred = pipe.predict(X_test)
     print("Acurácia:", accuracy_score(y_test, y_pred))
     print(classification_report(y_test, y_pred, target_names=["Negativo", "Positivo"]))
+
+    # Dentro do loop de avaliação:
+    cm = confusion_matrix(y_test, y_pred)
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+            xticklabels=["Negativo", "Positivo"],
+            yticklabels=["Negativo", "Positivo"])
+    plt.title(f"Matriz de Confusão - {name}")
+    plt.xlabel("Previsto")
+    plt.ylabel("Real")
+    plt.show()
     
     # Cross-validation (5-fold)
     cv_scores = cross_val_score(pipe, X, y, cv=5)
-    print(f"Cross-val Mean Acc: {cv_scores.mean():.4f}")
+    print(f"Cross-val Mean Acc: {cv_scores.mean():.4f} ± {cv_scores.std():.4f}")
+
 
 # ========================
 # 💾 Salvar Logistic como modelo final
