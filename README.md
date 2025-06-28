@@ -92,7 +92,7 @@ python src/comparar_modelos.py
 python src/teste_frase.py
 
 ---
-📊 Resultados
+## 📊 Resultados
 Cross-validation
 
 Acurácia
@@ -102,7 +102,7 @@ Matriz de confusão
 Relatório de classificação
 
 ---
-✅ Tecnologias Usadas
+## ✅ Tecnologias Usadas
 Python
 
 Pandas
@@ -117,7 +117,7 @@ Seaborn / Matplotlib
 
 
 
-✨ Autor
+## ✨ Autores
 Thais Marques Mota
 Emerson Rodrigo Lopes
 
