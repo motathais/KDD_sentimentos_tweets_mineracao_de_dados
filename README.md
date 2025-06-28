@@ -42,7 +42,6 @@ projeto_mineracao/
 
 1️⃣ Clone o repositório ou copie os arquivos:
 
-```bash
 git clone <URL_DO_SEU_REPOSITORIO>
 cd projeto_mineracao
 
